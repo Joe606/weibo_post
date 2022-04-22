@@ -24,3 +24,8 @@ The following is done.
 How to run the spider:
 
     python get_data.py
+
+How to run the express:
+    cd /myapp
+    set DEBUG=myapp:* & npm start
+

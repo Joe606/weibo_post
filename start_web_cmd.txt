@@ -1,0 +1,27 @@
+$ npx express-generator
+
+For earlier Node versions, install the application generator as a global npm package and then launch it:
+$ npm install -g express-generator
+$ express
+
+Display the command options with the -h option:
+$ express -h
+
+For example, the following creates an Express app named myapp. The app will be created in a folder named myapp in the current working directory and the view engine will be set to Pug:
+express --view=pug myapp
+
+Then install dependencies:
+$ cd myapp
+$ npm install
+
+On MacOS or Linux, run the app with this command:
+
+$ DEBUG=myapp:* npm start
+
+On Windows Command Prompt, use this command:
+
+> set DEBUG=myapp:* & npm start
+
+On Windows PowerShell, use this command:
+
+PS> $env:DEBUG='myapp:*'; npm start
